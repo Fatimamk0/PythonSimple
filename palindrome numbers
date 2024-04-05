@@ -1,0 +1,19 @@
+#Given an integer x, return true if x is a palindrome, and false otherwise.
+def is_palindrome(n):
+    # Convert the number to a string
+    num_str = str(n)
+ 
+    # Use slicing to reverse the string
+    reversed_str = num_str[::-1]
+ 
+    # Compare the original string with the reversed string
+    return num_str == reversed_str
+ 
+n = int(input("Enter a number:"))
+ 
+if is_palindrome(n):
+    print("The number is a palindrome!")
+else:
+    print("The number is not a palindrome.")
+     
+        
